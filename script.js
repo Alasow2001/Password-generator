@@ -32,45 +32,37 @@ function generatePassword(){
   options.hasUpperChars = confirm("Would you like to have upper case characters?");
   options.hasNumberChars = confirm("Would you like to have number characters?");
 
-  
-  var lowerCaseChars = [];
+  // The following 16 lines will contain an array of lower/upper case characters, special and number characters.
+  // It also contains an if statement that will randomly chose an item in the array for a given password
 
+  var characters = []
+
+  var lowerCaseChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
+  'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   if(options.haslowerChars){
-
+    characters.concat(s);
   }
 
-  var upperCaseChars = [];
-
+  var upperCaseChars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
+  'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   if(options.hasUpperChars){
-
+    characters.concat();
   }
 
-  var specialChars = [];
-
+  var specialChars = ['U+0020', 'U+0021', 'U+0022', 'U+0023', 'U+0024', 'U+0025', 'U+0026', ];
   if(options.hasSpecialChars){
-
+    characters.concat();
   }
 
-  var numberChars = [];
-
+  var numberChars = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
   if(options.hasNumberChars){
-
+    characters.concat();
   }
 
-  // This will then set a randomly generated password that fits the criteria 
+  // This will then set a randomly generated password that fits the criteria, combining all four options into one password.
   var password = '';
   for(var i = 0; i<options.numberOfChars; options.numberOfChars++){
-
-    password += Math.random();
-  
   }
-
-
-
-
-
-
-
 
   return('password');
 }
