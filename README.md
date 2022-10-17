@@ -36,6 +36,7 @@ The users can apply this feature for various websites to ensure that their accou
 
 List of special sharacters: https://owasp.org/www-community/password-special-characters
 Documentation on how to combine more than two arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+Documentation on Math.random() function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 
 ## License
