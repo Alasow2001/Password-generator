@@ -63,7 +63,7 @@ function generatePassword(){
   // This will then set a randomly generated password that fits the criteria, combining all four options into one password.
   var password = '';
   for(var i = 0; i<options.numberOfChars; options.numberOfChars++){
-    password += Math.floor(Math.random() * options.numberOfChars);
+    password += characters[Math.floor(Math.random() * options.numberOfChars)];
   }
 
   return('password');
