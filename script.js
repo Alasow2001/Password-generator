@@ -40,28 +40,30 @@ function generatePassword(){
   var lowerCaseChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
   'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   if(options.haslowerChars){
-    characters.concat(s);
+    characters.concat(lowerCaseChars);
   }
 
   var upperCaseChars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 
   'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   if(options.hasUpperChars){
-    characters.concat();
+    characters.concat(upperCaseChars);
   }
 
-  var specialChars = ['U+0020', 'U+0021', 'U+0022', 'U+0023', 'U+0024', 'U+0025', 'U+0026', ];
+  var specialChars = ['!', '"', '#', '$', '%', '&', '(', ',', ')', '*', '+', '-', '.', '/', ':', 
+  ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~'];
   if(options.hasSpecialChars){
-    characters.concat();
+    characters.concat(specialChars);
   }
 
   var numberChars = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
   if(options.hasNumberChars){
-    characters.concat();
+    characters.concat(numberChars);
   }
 
   // This will then set a randomly generated password that fits the criteria, combining all four options into one password.
   var password = '';
   for(var i = 0; i<options.numberOfChars; options.numberOfChars++){
+    password += Math.random() * options.numberOfChars;
   }
 
   return('password');
