@@ -32,9 +32,9 @@ THEN the password is either displayed in an alert or written to the page
 
 The users can apply this feature for various websites to ensure that their accounts are secure and safe, since it doesn't repeat the same output each time. For developers, they can use the Chrome DevTools extension to look into the code as the application is running to see how the code is working. (For Mac: Command+Option+I | For Windows: Control+Shift+I). From there, the developer will be able to see the fully commented JavaScript code, in addition to the CSS rules applied to the application, being able to test and alter the existing code to understand the functionality.
 
-```md
-![Screenshot of the main page of the password generator]("C:\Users\aalas\bootcamp\Student\Password-generator\Screenshots\First-alert.png")
-```
+    ```md
+    ![Screenshot of the main page of the password generator]("C:\Users\aalas\bootcamp\Student\Password-generator\Screenshots\First-alert.png")
+    ```
 
 ## Credits
 
@@ -43,6 +43,8 @@ List of special sharacters: https://owasp.org/www-community/password-special-cha
 Documentation on how to combine more than two arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
 Documentation on Math.random() function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+Link to the deployed website: https://alasow2001.github.io/Password-generator/
 
 
 ## License
