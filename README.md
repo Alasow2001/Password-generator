@@ -37,6 +37,10 @@ The users can apply this feature for various websites to ensure that their accou
 ![First alert](./assets/images/First-alert.png)
 ![Generated password](./assets/images/Password%20test.png)
 
+## Deployed link
+
+https://alasow2001.github.io/Password-generator/ 
+
 
 ## License
 N/A
